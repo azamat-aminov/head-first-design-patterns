@@ -12,8 +12,7 @@ Well, we have a few options...
    created one
 3. Use “double-checked locking” to reduce the use of synchronization in getInstance()
 
-
-
+<img width="692" alt="image" src="https://github.com/azamat-aminov/head-first-design-patterns/assets/63450583/517b7007-dc5e-45ed-b138-4b8e53fdc0cc">
 
 
 Q: I’ve always been taught that a class should do one thing and one thing only. For a class to do two things is considered bad OO design. 
