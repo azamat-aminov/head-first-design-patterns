@@ -1,6 +1,8 @@
 package com.design.iterator;
 
-public class MenuItem {
+import java.util.Iterator;
+
+public class MenuItem extends MenuComponent {
 
     String name;
     String description;
@@ -12,6 +14,10 @@ public class MenuItem {
         this.description = description;
         this.vegetarian = vegetarian;
         this.price = price;
+    }
+
+    public Iterator createIterator() {
+        return new NullIterator();
     }
 
     public String getName() {
@@ -28,5 +34,16 @@ public class MenuItem {
 
     public boolean isVegetarian() {
         return vegetarian;
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Name: " + getName());
+//        if (isVegetarian()) {
+//            System.out.println("(v)");
+//        }
+        System.out.println("Price: " + getPrice());
+        System.out.println("Description: " + getDescription());
+        System.out.println("----------------");
     }
 }
